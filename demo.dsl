@@ -3,6 +3,7 @@ workspace {
     model {
         user = person "User"
         softwareSystem = softwareSystem "Software System" {
+            !docs docs
             webapp = container "Web Application" {
                 user -> this "Uses"
             }
